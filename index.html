@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#12060c" />
+  <title>SMASHBU — Smash Burgers Gdańsk</title>
+  <meta name="description" content="SmashBu — premium smash burgers w Gdańsku (Garnizon). Zamów online, zobacz menu, opinie i lokalizację." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <!-- FLOATING BACKGROUND (absolute icons) -->
+  <div class="bgFloat" aria-hidden="true" id="bgFloat">
+    <div class="floater is-strong" data-depth="10" style="left:6%;  top:14%; --size:150px; --rot:-10deg; --dur:11s;">
+      <img src="Illustrazioni e icone-06.png" alt="">
+    </div>
+    <div class="floater is-soft" data-depth="18" style="left:72%; top:10%; --size:170px; --rot:12deg; --dur:14s;">
+      <img src="Illustrazioni e icone-05.png" alt="">
+    </div>
+    <div class="floater" data-depth="14" style="left:84%; top:48%; --size:140px; --rot:-6deg; --dur:12s;">
+      <img src="Illustrazioni e icone-04.png" alt="">
+    </div>
+    <div class="floater is-soft" data-depth="22" style="left:10%; top:58%; --size:180px; --rot:8deg; --dur:16s;">
+      <img src="Illustrazioni e icone-03.png" alt="">
+    </div>
+    <div class="floater" data-depth="16" style="left:38%; top:76%; --size:160px; --rot:-14deg; --dur:13s;">
+      <img src="Illustrazioni e icone-02.png" alt="">
+    </div>
+    <div class="floater is-soft" data-depth="26" style="left:46%; top:18%; --size:120px; --rot:18deg; --dur:15s;">
+      <img src="Illustrazioni e icone-06.png" alt="">
+    </div>
+    <div class="floater is-soft" data-depth="30" style="left:58%; top:62%; --size:120px; --rot:-18deg; --dur:17s;">
+      <img src="Illustrazioni e icone-05.png" alt="">
+    </div>
+  </div>
+
+  <div class="page">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrap nav">
+        <a class="brand" href="#top" aria-label="SmashBu Home">
+          <span class="brandBadge">
+            <img class="brand__logo" src="SmashbuLogo.png" alt="SmashBu logo">
+          </span>
+        </a>
+
+        <nav class="navlinks" aria-label="Menu principale">
+          <a href="#menu">Menu</a>
+          <a href="#about">O nas</a>
+          <a href="#reviews">Opinie</a>
+          <a href="#gallery">Galeria</a>
+          <a href="#location">Lokalizacja</a>
+        </nav>
+
+        <div class="navcta">
+          <a class="pill" href="#location"><span class="dot"></span><span>Garnizon</span></a>
+          <a class="pill pill--primary" href="#order">Zamów</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="top" class="hero">
+      <div class="wrap heroGrid">
+        <section class="heroCard" aria-label="Hero">
+          <div class="heroMedia" aria-hidden="true"></div>
+
+          <div class="heroContent">
+            <div>
+              <div class="kicker">
+                <span class="tag">SMASH BURGERS</span>
+                <span class="tag">CRISPY EDGE</span>
+                <span class="tag">PREMIUM SAUCE</span>
+              </div>
+
+              <h1 class="heroTitle">
+                <span class="stroke">SMASH</span><br>
+                BURGERS<br>
+                <span style="color:var(--sb-cyan)">GDAŃSK</span>
+              </h1>
+
+              <p class="heroLead">
+                Minimal składników, maksimum smaku. Płaska płyta, wysoka temperatura, chrupiąca skorupka i soczyste wnętrze.
+              </p>
+
+              <div class="heroActions" id="order">
+                <a class="pill pill--primary" href="https://www.instagram.com/" target="_blank" rel="noopener">Zamów / Instagram</a>
+                <a class="pill" href="#menu">Zobacz menu</a>
+                <a class="pill" href="#reviews">Opinie Google</a>
+              </div>
+
+              <div class="heroMini">
+                <span><b>4.9★</b> Google</span>
+                <span class="sep">•</span>
+                <span><b>40–60 zł</b></span>
+                <span class="sep">•</span>
+                <span><b>13:00–21:00</b></span>
+              </div>
+            </div>
+
+            <div class="metaRow" style="margin-top:auto">
+              <span class="chip chip--y">Gorąca płyta</span>
+              <span class="chip chip--p">Autorskie sosy</span>
+              <span class="chip chip--c">Świeża wołowina</span>
+            </div>
+          </div>
+        </section>
+
+        <aside class="heroSide" aria-label="Highlights">
+          <div class="miniCard">
+            <div class="miniTop">
+              <div class="miniIcon"><img src="Illustrazioni e icone-06.png" alt=""></div>
+              <div class="miniText">
+                <h3>Double Smash</h3>
+                <p>Chrupiąca skorupka + soczysty środek.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="miniCard">
+            <div class="miniTop">
+              <div class="miniIcon"><img src="Illustrazioni e icone-05.png" alt=""></div>
+              <div class="miniText">
+                <h3>Fries & Dip</h3>
+                <p>Złociste, chrupkie. Dopasuj dip.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="miniCard">
+            <div class="miniTop">
+              <div class="miniIcon"><img src="Illustrazioni e icone-04.png" alt=""></div>
+              <div class="miniText">
+                <h3>Milkshake</h3>
+                <p>Słodka kropka nad i.</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Dlaczego SmashBu?</h2>
+            <p class="sub">Pink brand mood + akcenty żółte i niebieskie. Czytelny layout bez nachodzeń.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <article class="card"><div class="accentLine"></div><div class="cardPad">
+            <h3 class="cardTitle">Smash technique</h3><p class="cardP">Wysoka temperatura = chrupiący rant.</p>
+          </div></article>
+
+          <article class="card"><div class="accentLine"></div><div class="cardPad">
+            <h3 class="cardTitle">Prosto i mocno</h3><p class="cardP">Mniej składników, więcej równowagi.</p>
+          </div></article>
+
+          <article class="card"><div class="accentLine"></div><div class="cardPad">
+            <h3 class="cardTitle">Garnizon vibe</h3><p class="cardP">Dobra lokalizacja + głodny target.</p>
+          </div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Menu</h2>
+            <p class="sub">Klikaj kategorie — ceny edytujesz w JS.</p>
+          </div>
+          <a class="pill pill--primary" href="#order">Zamów</a>
+        </div>
+
+        <div class="menuWrap">
+          <div class="menuTabs" role="tablist" aria-label="Kategorie menu">
+            <button class="tabBtn is-active" type="button" data-tab="burgers">Burgery</button>
+            <button class="tabBtn" type="button" data-tab="sides">Frytki</button>
+            <button class="tabBtn" type="button" data-tab="addons">Dodatki</button>
+            <button class="tabBtn" type="button" data-tab="sauces">Sosy</button>
+            <button class="tabBtn" type="button" data-tab="drinks">Napoje</button>
+            <button class="tabBtn" type="button" data-tab="shakes">Shake</button>
+          </div>
+
+          <div class="menuGrid" id="menuGrid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Opinie Google</h2>
+            <p class="sub">
+              <b>4.9★</b> • <span class="mutedInline">156 opinii</span> — najlepsze cytaty od klientów.
+            </p>
+          </div>
+
+          <div class="reviewsCtas">
+            <a class="pill" id="googleReviewsLink" href="https://www.google.com/maps" target="_blank" rel="noopener">
+              Zobacz na Google
+            </a>
+            <div class="reviewsNav">
+              <button class="pill revBtn" id="revPrev" type="button" aria-label="Poprzednia opinia">←</button>
+              <button class="pill revBtn" id="revNext" type="button" aria-label="Następna opinia">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="reviewsWrap">
+          <div class="reviewsTrack" id="reviewsTrack" aria-label="Lista opinii" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Galeria</h2>
+            <p class="sub">Klik na zdjęcie → lightbox.</p>
+          </div>
+          <a class="pill" href="#location">Lokalizacja</a>
+        </div>
+
+        <div class="gallery">
+          <div class="gItem" data-full="CHEESE SMASH.png" data-title="Cheese Smash">
+            <span class="gBadge" style="color:var(--sb-yellow)">Cheese Smash</span>
+            <img src="CHEESE SMASH.png" alt="Cheese Smash burger">
+          </div>
+
+          <div class="gItem" data-full="Illustrazioni e icone-03.png" data-title="Icon">
+            <span class="gBadge" style="color:var(--sb-cyan)">Icon</span>
+            <img src="Illustrazioni e icone-03.png" alt="SmashBu icon">
+          </div>
+
+          <div class="gItem" data-full="Illustrazioni e icone-02.png" data-title="Icon">
+            <span class="gBadge" style="color:var(--sb-pink)">Icon</span>
+            <img src="Illustrazioni e icone-02.png" alt="SmashBu icon">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section id="location" class="section">
+      <div class="wrap">
+        <div class="sectionHead">
+          <div>
+            <h2 class="h2">Lokalizacja</h2>
+            <p class="sub"><b>Bernarda Chrzanowskiego 9, Gdańsk (Garnizon)</b> — wbijaj albo zamawiaj.</p>
+          </div>
+          <a class="pill pill--primary" href="https://www.google.com/maps/search/?api=1&query=Bernarda%20Chrzanowskiego%209%2C%20Gda%C5%84sk" target="_blank" rel="noopener">Mapa</a>
+        </div>
+
+        <div class="locGrid">
+          <div class="card">
+            <div class="accentLine"></div>
+            <div class="cardPad">
+              <h3 class="cardTitle">Kontakt</h3>
+              <p class="cardP" style="margin-top:12px">
+                <span class="chip chip--c">Telefon</span> <b style="color:#fff">+48 XXX XXX XXX</b><br>
+                <span class="chip chip--p">Instagram</span> <b style="color:#fff">@smashbugdansk</b><br>
+                <span class="chip chip--y">Godziny</span> <b style="color:#fff">13:00–21:00</b>
+              </p>
+
+              <div class="btnRow">
+                <a class="pill" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+                <a class="pill" href="#" onclick="alert('Podłącz link do Wolt/Glovo/UberEats'); return false;">Delivery</a>
+                <a class="pill pill--primary" href="#order">Zamów</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="map" aria-label="Mapa">
+            <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Bernarda%20Chrzanowskiego%209%2C%20Gda%C5%84sk&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap footGrid">
+        <div class="footBrand">
+          <img src="Smashbu Logo Finale CMYK-01 (1).png" alt="SmashBu">
+          <p class="footP">Smash burgers • Garnizon, Gdańsk. Pink brand mood + floating icons.</p>
+        </div>
+
+        <div class="footCols">
+          <div class="footCol">
+            <h4>Nawigacja</h4>
+            <a href="#menu">Menu</a>
+            <a href="#about">O nas</a>
+            <a href="#reviews">Opinie</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#location">Lokalizacja</a>
+          </div>
+          <div class="footCol">
+            <h4>Info</h4>
+            <div>Bernarda Chrzanowskiego 9</div>
+            <div>Gdańsk • Garnizon</div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Bernarda%20Chrzanowskiego%209%2C%20Gda%C5%84sk" target="_blank" rel="noopener">Google Maps</a>
+            <div class="copy">© <span id="year"></span> SmashBu</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MOBILE ORDER BAR -->
+    <div class="orderBar" aria-label="Quick order bar">
+      <div class="orderBar__inner">
+        <div class="orderBar__left">
+          <span class="dot"></span>
+          <span><b>SmashBu</b> • Zamów teraz</span>
+        </div>
+        <a class="pill pill--primary" href="https://www.instagram.com/" target="_blank" rel="noopener">Zamów</a>
+        <a class="pill" href="#menu">Menu</a>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lb" id="lb" aria-hidden="true">
+      <div class="lbBox" role="dialog" aria-modal="true" aria-label="Gallery lightbox">
+        <button class="lbBtn lbClose" id="lbClose" type="button" aria-label="Close">✕</button>
+        <img class="lbImg" id="lbImg" alt="">
+        <div class="lbCap">
+          <div id="lbTitle">—</div>
+          <div class="lbNav">
+            <button class="lbBtn" id="lbPrev" type="button">←</button>
+            <button class="lbBtn" id="lbNext" type="button">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /page -->
+
+  <script src="./js/app.js" defer></script>
+</body>
+</html>

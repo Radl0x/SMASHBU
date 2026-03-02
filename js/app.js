@@ -7,15 +7,15 @@ document.getElementById("year").textContent = new Date().getFullYear();
 ========================= */
 const MENU = {
   burgers: [
-    { name:"Cheese Smash", price:"37 zł", desc:"2× patty wołowe • 4× cheddar • pikle • sos smash.", chips:["classic","cheddar","best"], icon:"Illustrazioni e icone-06.png" },
-    { name:"Bacon Smash",  price:"39 zł", desc:"2× patty wołowe • cheddar • 3× bekon • pikle • sos smash.", chips:["bacon","double","top"], icon:"Illustrazioni e icone-03.png" },
-    { name:"Dirty Smash",  price:"46 zł", desc:"2× patty wołowe • cheddar • panierowany smażony ser • jajko sadzone • 2× bekon • sos smash.", chips:["signature","extra","new"], icon:"Illustrazioni e icone-02.png" },
+    { name:"Cheese Smash", price:"37 zł", desc:"2× patty wołowe • 4× cheddar • pikle • sos smash.", chips:["classic","cheddar","best"], icon:"./images/cheese.png" },
+    { name:"Bacon Smash",  price:"39 zł", desc:"2× patty wołowe • cheddar • 3× bekon • pikle • sos smash.", chips:["bacon","double","top"], icon:"./images/bacon.png" },
+    { name:"Dirty Smash",  price:"46 zł", desc:"2× patty wołowe • cheddar • panierowany smażony ser • jajko sadzone • 2× bekon • sos smash.", chips:["signature","extra","new"], icon:"./images/cheese.png" },
     { name:"Honey Onion Smash", price:"39 zł", desc:"2× patty wołowe • cheddar • 2× bekon • karmelizowana cebula • musztarda francuska • sos smash.", chips:["sweet","bacon","top"], icon:"Illustrazioni e icone-06.png" },
     { name:"Flora Smash",  price:"39 zł", desc:"2× patty wołowe • cheddar • świeża sałatka • pomidor • sos smash • lekki winegret.", chips:["fresh","classic","light"], icon:"Illustrazioni e icone-03.png" },
     { name:"Chicken Smash", price:"37 zł", desc:"Kurczak w chrupiącej panierce • świeża sałata • sos Cezar.", chips:["chicken","crispy","cezar"], icon:"Illustrazioni e icone-05.png" },
     { name:"Crispy Chicken", price:"41 zł", desc:"Kurczak w panierce • cheddar • bekon • pomidor • prażona cebulka • sos Cezar • sos musztardowo-miodowy.", chips:["chicken","bacon","new"], icon:"Illustrazioni e icone-04.png" },
     { name:"Vege Smash", price:"39 zł", desc:"Burger z czerwonej fasoli • cheddar • pomidor • rukola • sos smash • aromatyczny sos truflowy.", chips:["vege","truffle","top"], icon:"Illustrazioni e icone-02.png" },
-    { name:"Mac’n Smash", price:"44 zł", desc:"2× patty wołowe • cheddar • 2× bekon • kremowe mac & cheese (makaron) • jalapeño • sos smash.", chips:["extra","cheddar","spicy"], icon:"Illustrazioni e icone-06.png" }
+    { name:"Mac’n Smash", price:"44 zł", desc:"2× patty wołowe • cheddar • 2× bekon • kremowe mac & cheese (makaron) • jalapeño • sos smash.", chips:["extra","cheddar","spicy"], icon:"mac.png" }
   ],
 
   sides: [
@@ -38,7 +38,6 @@ const MENU = {
     { name:"Jajko", price:"4 zł", desc:"Jajko sadzone do burgera.", chips:["egg"], icon:"Illustrazioni e icone-03.png" },
     { name:"Bekon", price:"6 zł", desc:"Chrupiący bekon.", chips:["bacon"], icon:"Illustrazioni e icone-03.png" },
 
-    /* “Stwórz swój zestaw” z grafiki */
     { name:"Zestaw: frytki king size", price:"+4 zł", desc:"Dodaj frytki king size do zestawu.", chips:["set"], icon:"Illustrazioni e icone-05.png" },
     { name:"Zestaw: dirty frytki", price:"+10 zł", desc:"Podmień frytki na dirty frytki.", chips:["set","loaded"], icon:"Illustrazioni e icone-05.png" },
     { name:"Zestaw: dirty frytki + bekon", price:"+14 zł", desc:"Dirty frytki z bekonem w zestawie.", chips:["set","bacon"], icon:"Illustrazioni e icone-03.png" },

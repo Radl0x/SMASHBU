@@ -184,6 +184,126 @@ button{font:inherit}
   box-shadow: var(--shadow);
   min-height: 520px;
 }
+
+/* =====================================================
+   XL SMASH – BURGER OF THE MONTH
+===================================================== */
+
+.xlMonth {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0c0f14 0%, #11161d 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.xlWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  gap: 60px;
+}
+
+@media (min-width: 900px) {
+  .xlWrap {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+/* LEFT */
+
+.xlBadge {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 6px 12px;
+  background: var(--sb-cyan);
+  color: #000;
+  font-weight: 700;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+.xlTitle {
+  font-size: clamp(42px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.xlTitle .stroke {
+  -webkit-text-stroke: 2px white;
+  color: transparent;
+}
+
+.xlDesc {
+  font-size: 18px;
+  opacity: 0.8;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.xlMeta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.xlPrice {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--sb-cyan);
+}
+
+.xlTag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+}
+
+/* RIGHT */
+
+.xlVisual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.xlVisual img {
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 30px 50px rgba(0,0,0,0.6));
+}
+
+.xlGlow {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, var(--sb-cyan) 0%, transparent 70%);
+  filter: blur(80px);
+  opacity: 0.25;
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* CTA */
+
+.xlActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Animation */
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50% { transform: scale(1.2); opacity: 0.35; }
+}
+
 .heroMedia{
   position:absolute; inset:0;
   background:
@@ -194,7 +314,7 @@ button{font:inherit}
 .heroMedia::before{
   content:"";
   position:absolute; inset:-40px;
-  background: url("../CHEESE SMASH.png") center/cover no-repeat;
+  background: url("../images/xlsmash.svg") center/cover no-repeat;
   filter: saturate(1.05) contrast(1.05);
   transform: scale(1.02);
   opacity:.95;
@@ -253,14 +373,6 @@ button{font:inherit}
 }
 .heroActions{display:flex; flex-wrap:wrap; gap:10px; margin-top: 8px;}
 .heroActions .pill{flex: 1 1 160px;}
-.heroMini{
-  display:flex; flex-wrap:wrap; gap:10px;
-  color: var(--muted2);
-  font-weight:750;
-  font-size:13px;
-  margin-top: 2px;
-}
-.heroMini b{color:var(--ink)}
 .sep{opacity:.35}
 .heroSide{display:grid; gap: var(--gap);}
 
@@ -382,7 +494,7 @@ button{font:inherit}
   grid-template-columns: 84px 1fr; /* più compatto su mobile */
   gap: 12px;
   border-radius: var(--r-2xl);
-  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  background: linear-gradient(180deg, rgba(167, 4, 158, 0.336), rgba(7, 193, 240, 0.185));
   border: 1px solid rgba(255,255,255,.12);
   box-shadow: var(--shadow2);
   overflow:hidden;
@@ -395,7 +507,7 @@ button{font:inherit}
   display:grid; place-items:center;
   padding: 10px;
 }
-.menuThumb img{width:64px;height:auto}
+.menuThumb img{width:84px;height:auto}
 
 .menuBody{
   padding: 12px 12px 14px 0;
@@ -530,38 +642,6 @@ button{font:inherit}
 .footCol a, .footCol div{display:block; color:var(--muted); font-weight:750; padding:7px 0;}
 .footCol a:hover{color:var(--ink)}
 .copyright{margin-top:8px; color:rgba(255,255,255,.45); font-weight:800;}
-
-/* =========================
-   11) MOBILE ORDER BAR
-========================= */
-.orderBar{
-  position:fixed; left:0; right:0; bottom:0; z-index:80;
-  padding: 10px var(--padX) calc(10px + env(safe-area-inset-bottom));
-  background: linear-gradient(180deg, rgba(231,43,137,.14), rgba(18,6,12,.86));
-  border-top: 1px solid rgba(255,255,255,.12);
-  backdrop-filter: blur(16px);
-}
-.orderBar__inner{
-  width:min(var(--max), calc(100vw - (var(--padX) * 2)));
-  margin-inline:auto;
-  display:flex;
-  gap:10px;
-  align-items:center;
-  justify-content:space-between;
-  flex-wrap:wrap;
-}
-.orderBar__left{
-  display:flex; gap:10px; align-items:center;
-  color:var(--muted);
-  font-weight:900;
-  letter-spacing:.2px;
-  text-transform:uppercase;
-  font-size: 12px;
-  flex: 1 1 180px;
-  min-width:0;
-}
-.orderBar__left b{color:var(--ink)}
-.orderBar .pill{flex: 1 1 140px; justify-content:center}
 
 /* =========================
    12) LIGHTBOX

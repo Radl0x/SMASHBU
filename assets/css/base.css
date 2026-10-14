@@ -1,0 +1,107 @@
+/* TOKENS GLOBALI DEL TEMA */
+:root {
+  --primary: #041b2e;
+  --accent: #0fa3b1;
+  --bg: #e8eef4;
+  --white: #ffffff;
+  --text: #1f2933;
+  --muted: #6b7280;
+  --radius: 16px;
+  --shadow: 0 4px 4px rgba(0, 0, 0, 0.185);
+}
+
+/* RESET E BOX MODEL */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  scrollbar-color: #39c6d2 #041b2e;
+  scrollbar-width: thin;
+}
+
+* {
+  scrollbar-color: #39c6d2 transparent;
+  scrollbar-width: thin;
+}
+
+body {
+  scrollbar-color: #39c6d2 #041b2e;
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-track-piece,
+*::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-corner,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-track,
+html::-webkit-scrollbar-track-piece,
+body::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track-piece {
+  background-color: #041b2e;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+html::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #39c6d2;
+  background-clip: padding-box;
+}
+
+/* DEFAULT DOCUMENTO */
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* CONTROLLI E MEDIA */
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer; 
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
